@@ -99,7 +99,7 @@ function App() {
     <XAxis
       type="number"
       dataKey="epoch_s"
-      domain={['auto', 'auto']}
+      domain={['dataMin', 'dataMax']}
       tickFormatter={t =>
         new Date(t * 1000).toLocaleString("en-CA", { hour12: false, timeZone: "America/Vancouver" })
       }
